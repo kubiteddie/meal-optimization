@@ -42,6 +42,8 @@ def getMenu(place, menuList):
         menu = UnionMarketSushiDF
     elif bestMatch == "Woodys":
         menu = WoodysDF
+    elif bestMatch == "TerraByteCafe":
+        menu = TerraByteCafeDF
     return menu
 
 
@@ -62,6 +64,7 @@ UnionMarketGrillDF = pd.read_csv("menuCSV/UnionMarketGrill.csv")
 UnionMarketSandwichDF = pd.read_csv("menuCSV/UnionMarketSandwich.csv")
 UnionMarketSushiDF = pd.read_csv("menuCSV/UnionMarketSushi.csv")
 WoodysDF = pd.read_csv("menuCSV/Woodys.csv")
+TerraByteCafeDF = pd.read_csv("menuCSV/TerraByteCafe.csv")
 
 menuList = ["Woodys",
             "UnionMarketSushi",
@@ -79,7 +82,8 @@ menuList = ["Woodys",
             "CurlMarketPasta",
             "CurlMarketBurrito",
             "BerryCafe",
-            "12thAvenueBreadCompany"]
+            "12thAvenueBreadCompany",
+            "TerraByteCafe"]
  
 fullMenuItems = []
 fullMenuPrices = []
