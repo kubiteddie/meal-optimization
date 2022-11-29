@@ -116,6 +116,9 @@ while True:
 
     if "swipe" in usrInput.lower():
         dollars = digits * 8
+        print("List of available restaurants includes: ")
+        for menu in menuList:
+            print("\t" + menu)
         print("Please enter the name of the restaurant you'd like to eat at: ")
         place = input()
         menuDF = getMenu(place, menuList)
