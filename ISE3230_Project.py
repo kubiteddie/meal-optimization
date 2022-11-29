@@ -3,19 +3,100 @@ from gurobipy import GRB
 import re
 import sys
 import pandas as pd
+from difflib import get_close_matches
 
-menu = {}
+def getMenu(place, menuList):
+    menu = pd.DataFrame()
+    bestMatch = get_close_matches(place, menuList, n=1)[0]
+    if bestMatch == "12thAvenueBreadCompany":
+        menu = TwelfthAveBreadDF
+    elif bestMatch == "BerryCafe":
+        menu = BerryCafeDF
+    elif bestMatch == "CurlMarketBurrito":
+        menu = CurlMarketBurritoDF
+    elif bestMatch == "CurlMarketPasta":
+        menu = CurlMarketPastaDF
+    elif bestMatch == "CurlMarketSandwich":
+        menu = CurlMarketSandwichDF
+    elif bestMatch == "CurlMarketSushi":
+        menu = CurlMarketSushiDF
+    elif bestMatch == "MarketplaceOnNeilDeliDF":
+        menu = MarketplaceOnNeilDeliDF
+    elif bestMatch == "MarketplaceOnNeilPastaRiceBowls":
+        menu = MarketplaceOnNeilPastaRiceBowlsDF
+    elif bestMatch == "MarketplaceOnNeilPizza":
+        menu = MarketplaceOnNeilPizzaDF
+    elif bestMatch == "MarketplaceOnNeilSushi":
+        menu = MarketplaceOnNeilSushiDF
+    elif bestMatch == "MirrorLakeEatery":
+        menu = MirrorLakeEateryDF
+    elif bestMatch == "Sloopys":
+        menu = SloopysDF
+    elif bestMatch == "UnionMarketGrainBowl":
+        menu = UnionMarketGrainBowlDF
+    elif bestMatch == "UnionMarketGrill":
+        menu = UnionMarketGrillDF
+    elif bestMatch == "UnionMarketSandwich":
+        menu = UnionMarketSandwichDF
+    elif bestMatch == "UnionMarketSushi":
+        menu = UnionMarketSushiDF
+    elif bestMatch == "Woodys":
+        menu = WoodysDF
+    return menu
 
-df = pd.read_csv("menuCSV/MarketplaceOnNeilPizza.csv")
+
+TwelfthAveBreadDF = pd.read_csv("menuCSV/12thAvenueBreadCompany.csv")
+BerryCafeDF = pd.read_csv("menuCSV/BerryCafe.csv")
+CurlMarketBurritoDF = pd.read_csv("menuCSV/CurlMarketBurrito.csv")
+CurlMarketPastaDF = pd.read_csv("menuCSV/CurlMarketPasta.csv")
+CurlMarketSandwichDF = pd.read_csv("menuCSV/CurlMarketSandwich.csv")
+CurlMarketSushiDF = pd.read_csv("menuCSV/CurlMarketSushi.csv")
+MarketplaceOnNeilDeliDF = pd.read_csv("menuCSV/MarketplaceOnNeilDeli.csv")
+MarketplaceOnNeilPastaRiceBowlsDF = pd.read_csv("menuCSV/MarketplaceOnNeilPastaRiceBowls.csv")
+MarketplaceOnNeilPizzaDF = pd.read_csv("menuCSV/MarketplaceOnNeilPizza.csv")
+MarketplaceOnNeilSushiDF = pd.read_csv("menuCSV/MarketplaceOnNeilSushi.csv")
+MirrorLakeEateryDF = pd.read_csv("menuCSV/MirrorLakeEatery.csv")
+SloopysDF = pd.read_csv("menuCSV/Sloopys.csv")
+UnionMarketGrainBowlDF = pd.read_csv("menuCSV/UnionMarketGrainBowl.csv")
+UnionMarketGrillDF = pd.read_csv("menuCSV/UnionMarketGrill.csv")
+UnionMarketSandwichDF = pd.read_csv("menuCSV/UnionMarketSandwich.csv")
+UnionMarketSushiDF = pd.read_csv("menuCSV/UnionMarketSushi.csv")
+WoodysDF = pd.read_csv("menuCSV/Woodys.csv")
+
+menuList = ["Woodys",
+            "UnionMarketSushi",
+            "UnionMarketSandwich",
+            "UnionMarketGrill",
+            "UnionMarketGrainBowl",
+            "Sloopys",
+            "MirrorLakeEatery",
+            "MarketplaceOnNeilSushi",
+            "MarketplaceOnNeilPizza",
+            "MarketplaceOnNeilPastaRiceBowls",
+            "MarketplaceOnNeilDeli",
+            "CurlMarketSushi",
+            "CurlMarketSandwich",
+            "CurlMarketPasta",
+            "CurlMarketBurrito",
+            "BerryCafe",
+            "12thAvenueBreadCompany"]
  
-# converting column data to list
-items = df['Item'].tolist()
-prices = df['Price'].tolist()
+fullMenuItems = []
+fullMenuPrices = []
 
-
+#Create a full menu too
+for menu in menuList:
+    df = pd.read_csv(f"menuCSV/{menu}.csv")
+    items = df['Item'].tolist()
+    tempItems = [menu + ' ' + food for food in items]
+    fullMenuItems = fullMenuItems + tempItems
+    prices = df['Price'].tolist()
+    fullMenuPrices = fullMenuPrices + prices
 
 while True:
     dollars = 0
+    items = []
+    prices = []
 
     print("""Please enter a number of Swipes, Dining Dollars, or BuckID cash in the following format:
     'n swipes', where n is the number of swipes you wish to use;
@@ -31,10 +112,19 @@ while True:
 
     if "swipe" in usrInput.lower():
         dollars = digits * 8
+        print("Please enter the name of the restaurant you'd like to eat at: ")
+        place = input()
+        menuDF = getMenu(place, menuList)
+        items = menuDF["Item"].tolist()
+        prices = menuDF["Price"].tolist()
     elif "dining" in usrInput.lower() or "dd" in usrInput.lower():
         dollars = digits / .65
+        items = fullMenuItems
+        prices = fullMenuPrices
     elif "buckid" in usrInput.lower() or "buck" in usrInput.lower():
         dollars = digits
+        items = fullMenuItems
+        prices = fullMenuPrices
     else:
         print("Payment method not recognized. Program will exit.")
         sys.exit()
