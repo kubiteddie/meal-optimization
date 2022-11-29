@@ -1,105 +1,68 @@
 ﻿Item,Price
-"Bagel (Asiago Cheese, Blueberry, Cinnamon Raisin, Everything, Honey Wheat, Plain, Gluten Free, Pumpernickel) w/ Cream Cheese",2.75
-"Bread (Spinach Pimento Cheddar, Zucchini, Coconut)",
-Brownie,
-"Cookie (Chocolate Chip, Oatmeal Raisin, Sea Salt Caramel Dark Chocolate, Sesame Tahini, White Chocolate Cherry Gluten Free)",1.25
-Glazed Lemon Pound Cake,
-"Muffin (Blueberry, Chocolate Chip, Cranberry Orange)",2.75
-"Pastry (Butter Croissant, Cinnamon Brioche, Gouda)",3.5
-French Palmier Pastry,
-Spinach and Feta Croissant,
-Score - Raspberry White Chocolate,
-"Nut Harvest (Almonds, Cashews)",
-"Fruit (Apple, Banana)",
-"Bar-88 Acres (Oats & Cinnamon, Triple Berry)",
-Hummus Bento Box,
-"Chips (Hot Cheetos, Lays Baked Original, Cool Ranch Doritos, White Cheddar Popcorn)",1.25
-Grape and Cheese,
-Grape and Berry Cup,
-Veggie Cup,
-"Kind Bar (Almond and Coconut, Dark Chocolate Nut and Sea Salt)",
-"Parfait (Yogurt and Granola, Dairy Free)",
-"Yogurt (Yoplait Mixed Berry, Chobani Flip Coffee Brownie)",2.75
+"Bagel (Asiago Cheese, Blueberry, Cinnamon Raisin, Everything, Honey Wheat, Plain, Gluten Free, Pumpernickel) w/ Cream Cheese or other Spread",2.75
+"Soup (Broccoli Cheddar, Cheeseburger Chowder, Chili with Beans, Garden Vegetable Soup, Baked Potato w/ Bacon, Chicken w/ Wild Rice, Corn Chowder, Garden Vegetable, Tuscan Bean and Sausage, Italian Wedding, French Onion, Minestrone, Smokey Poblano Cheese, Tomato Tortellini Soup, Tortilla w/ Chicken), 8oz",3.75
+BELT Sandwich,8
+Briskey & Cheddar Sandwich,10
+California Turkey Sandwich,8
+Pizza Bagel,5
+Plant Based Bagel Sandwich,8
+Asparagus & Hummus Wrap,6.75
+Ham Sandwich (Gluten Free),6.95
+"Chips (Lays Baked Original, Salt and Vinegar, Doritos Nacho Cheese)",1.25
+"12ABC Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",4.35
+"12ABC Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",4.95
+"12ABC Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",5.45
+Brewed Coffee (12oz),2.25
+Brewed Coffee (16oz),2.65
+Brewed Coffee (20oz),2.95
 Café Americano (12oz),2.85
 Café Americano (16oz),3.25
 Café Americano (20oz),3.55
-"BeeHive Latte (2% Milk), (12oz)",4.1
-"BeeHive Latte (2% Milk), (16oz)",4.8
-"BeeHive Latte (2% Milk), (20oz)",5.1
-"Buckeye Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.95
-"Buckeye Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.55
-"Buckeye Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.95
-"Café Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.45
-"Café Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.15
-"Café Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.45
-"Café Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.65
-"Café Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.65
-"Café Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.95
-"Cappuccino (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.45
-"Cappuccino (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.15
-"Cappuccino (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.45
-"Carmilla Macchiato (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.65
-"Carmilla Macchiato (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.45
-"Carmilla Macchiato (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.75
-"Chai Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.75
-"Chai Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.35
-"Chai Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.85
-Espresso Shot,2.25
-"Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.05
-"Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",3.65
-"Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.15
-"Matcha Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.75
-"Matcha Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.35
-"Matcha Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.85
-"Steamer (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",2.95
-"Steamer (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",3.35
-"Steamer (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",3.65
-"TBC Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",4.35
-"TBC Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.95
-"TBC Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",5.45
-"White Chocolate Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",4.35
-"White Chocolate Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",4.95
-"White Chocolate Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",5.15
-"White Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (12oz)",3.25
-"White Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (16oz)",3.75
-"White Hot Chocolate (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",3.95
-Black Iced Tea (20oz),2.95
-Black Iced Tea (24oz),3.45
-Cold Brew Iced Coffee (20oz),3.5
-Cold Brew Iced Coffee (24oz),4.2
-Iced Americano (20oz),3.25
-Iced Americano (24oz),3.95
-"Iced Buckeye Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.95
-"Iced Buckeye Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.65
-"Iced Cafe Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.25
-"Iced Café Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",4.95
-"Iced Carmilla Macchiato (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.75
-"Iced Carmilla Macchiato (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.45
-"Iced Chai Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.45
-"Iced Chai Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.15
-"Iced Matcha Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.65
-"Iced Matcha Latte (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.35
-"Iced Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.65
-"Iced Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.35
-"Iced TBC Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.95
-"Iced TBC Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.65
-"Iced White Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (20oz)",4.95
-"Iced White Mocha (2% Milk, Almond Milk, Oat Milk, Skim Milk, Soy Milk), (24oz)",5.65
-Frozen Buckeye Mocha (16oz),4.95
-Frozen Café Melmoso (16oz),4.95
-Frozen Carmilla Macchiato (16oz),4.95
-Frozen Chai (16oz),4.95
-Frozen Hot Chocolate (16oz),4.95
-Frozen Matcha Latte (16oz),4.95
-Frozen TBC Mocha (16oz),4.95
-Frozen White Mocha (16oz),4.95
-"Smoothie (Strawberry, Mango, Peach, Strawberry/Banana)",4.45
-"Salad (Chicken and Kale, Grilled Chicken Caeser, Small House, Power Green w/ Feta, Salmon Caeser)",
-Buffalo Chicken Sandwich,
-Caprese Sandwich,
-Chicken Salad Sandwich (Gluten Free),
-Ham Sandwich (Gluten Free),
-Turkey Sandwich (Gluten Free),
-Italian Sub,
-Italian Sub (Gluten Free),
-Asparagus & Hummus Wrap,
+"Café Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",3.45
+"Café Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",4.15
+"Café Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.45
+"Café Mocha (2% Milk, Soy Milk), (12oz)",3.65
+"Café Mocha (2% Milk, Soy Milk), (16oz)",4.65
+"Café Mocha (2% Milk, Soy Milk), (20oz)",4.95
+"Cappuccino (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",3.45
+"Cappuccino (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",4.15
+"Cappuccino (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.45
+"Chai Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",3.75
+"Chai Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",4.35
+"Chai Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.85
+Espresso (Single),2.25
+Espresso (Double),2.55
+"Hot Chocolate (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",3.05
+"Hot Chocolate (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",3.65
+"Hot Chocolate (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.15
+"White Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (12oz)",4.35
+"White Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (16oz)",4.95
+"White Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",5.45
+"Iced Buckeye Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.95
+"Iced Buckeye Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (24oz)",5.65
+"Iced Café Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.25
+"Iced Café Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (24oz)",4.95
+"Iced Chai Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.25
+"Iced Chai Latte (2% Milk, Almond Milk, Skim Milk, Soy Milk), (24oz)",5.15
+Iced Coffee (20oz),3.5
+Iced Coffee (24oz),3.8
+"Iced Tea (Organic Black, Organic Green), (20oz)",2.95
+"Iced Tea (Organic Black, Organic Green), (24oz)",3.25
+"Iced White Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (20oz)",4.95
+"Iced White Mocha (2% Milk, Almond Milk, Skim Milk, Soy Milk), (24oz)",5.65
+"Frozen Cafe Mocha (2% Milk, Soy Milk), (16oz)",4.95
+"Frozen Chai Latte (2% Milk, Soy Milk), (16oz)",4.95
+"Frozen Hot Chocolate (2% Milk, Soy Milk), (16oz)",4.95
+"Frozen Mocha (2% Milk, Soy Milk), (12oz)",4.45
+"Frozen Mocha (2% Milk, Soy Milk), (16oz)",4.65
+"Frozen Vanilla Crème  (2% Milk, Soy Milk), (16oz)",4.65
+"Smoothie (Berry, Mango Peach, Strawberry Banana, Strawberry)",4.45
+"Yogurt (Chobani Flip Key Lime Crumble, Chobani Flip Mint Chocolate, Chobani Black Cherry, Yoplait Mixed Berry, Yoplait Strawberry)",2.75
+"Salad (Rainbow Bowl, Grilled Chicken Caeser Salad, Salmon Caeser Salad)",9.95
+"Powerade (Fruit Punch, Mountain Blast)",2.95
+"Core Power (Chocolate, Vanilla)",3.75
+"Chobani Greek Yogurt Drink (Mango, Mixed Berry, Peach)",3.25
+2% White Milk,1.25
+"Juice (Simply Raspberry Lemonade, Simply Lemonade, Simply Orange, Simply Mango Orange)",2.95
+Smart Water (20oz),2
+Smart Water (1 Litre),3
