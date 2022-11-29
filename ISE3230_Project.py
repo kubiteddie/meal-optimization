@@ -2,6 +2,17 @@ import gurobipy as gp
 from gurobipy import GRB
 import re
 import sys
+import pandas as pd
+
+menu = {}
+
+df = pd.read_csv("menuCSV/MarketplaceOnNeilPizza.csv")
+ 
+# converting column data to list
+items = df['Item'].tolist()
+prices = df['Price'].tolist()
+
+
 
 while True:
     dollars = 0
@@ -31,30 +42,27 @@ while True:
     m = gp.Model("ISE3230_Project")
     m.Params.LogToConsole = 0
 
-    #"Burger", 5.31
-    #"Chicken", 3.84
-    #"Drink", 1.63
-    items = ["Burger", "Chicken", "Drink"]
-    prices = [5.31, 3.84, 1.62]
+    x = m.addVars(len(items), vtype=GRB.INTEGER, name="x")
 
-    x = m.addVars(3, vtype=GRB.INTEGER, name="x")
-
-    sum = 5.31*x[0] + 3.84*x[1] + 1.62*x[2]
+    #Create sum to optimize over
+    sum = 0
+    for i in range(len(items)):
+        sum += prices[i] * x[i]
 
     m.setObjective(sum, GRB.MAXIMIZE)
 
-    m.addConstr(5.31*x[0] + 3.84*x[1] + 1.62*x[2] <= dollars)
-    m.addConstr(x[0] >= 0)
-    m.addConstr(x[1] >= 0)
-    m.addConstr(x[2] >= 0)
+    m.addConstr(sum <= dollars)
+    for i in range(len(items)):
+        m.addConstr(x[i] >= 0)
 
     m.optimize()
 
     print(f"The optimal use of your money will cost ${round(m.objVal, 2)}, leaving you with ${round(dollars - m.objVal, 2)} left over.")
 
     for v in m.getVars():
-        index = int(v.varName[2])
-        if v.x == 1:
-            print(f"Order {int(v.x)} {items[index]} for ${int(v.x) * prices[index]}")
-        else:
-            print(f"Order {int(v.x)} {items[index]}s for ${int(v.x) * prices[index]}")
+        if int(v.x) != 0:
+            index = int(re.search(r'\d+', v.varName).group())
+            if v.x == 1:
+                print(f"Order {int(v.x)} {items[index]} for ${int(v.x) * prices[index]}")
+            else:
+                print(f"Order {int(v.x)} {items[index]}s for ${int(v.x) * prices[index]}")
