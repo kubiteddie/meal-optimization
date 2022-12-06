@@ -110,7 +110,7 @@ while True:
 
     usrInput = input()
     try:
-        digits = int(re.search(r'\d+', usrInput).group())
+        digits = float(re.search(r'\d{0,3}(\.\d{1,2})?', usrInput).group())
     except:
         sys.exit()
 
@@ -125,7 +125,7 @@ while True:
         items = menuDF["Item"].tolist()
         prices = menuDF["Price"].tolist()
     elif "dining" in usrInput.lower() or "dd" in usrInput.lower():
-        dollars = digits / .65
+        dollars = float(digits / .65)
         items = fullMenuItems
         prices = fullMenuPrices
     elif "buckid" in usrInput.lower() or "buck" in usrInput.lower():
@@ -160,6 +160,6 @@ while True:
         if int(v.x) != 0:
             index = int(re.search(r'\d+', v.varName).group())
             if v.x == 1:
-                print(f"Order {int(v.x)} {items[index]} for ${int(v.x) * prices[index]}")
+                print(f"Order {int(v.x)} {items[index]} for ${round(int(v.x) * prices[index], 2)}")
             else:
-                print(f"Order {int(v.x)} {items[index]}s for ${int(v.x) * prices[index]}")
+                print(f"Order {int(v.x)} {items[index]}s for ${round(int(v.x) * prices[index], 2)}")
